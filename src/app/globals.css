@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  --cream: #fbf4e8;
+  --linen: #efe0c9;
+  --beige: #d9bd94;
+  --coffee: #6f4b32;
+  --espresso: #2d2018;
+  --charcoal: #161412;
+  --gold: #c8a35f;
+  --sage: #69715d;
+  --rose: #b87963;
+}
+
+@theme inline {
+  --color-cream: var(--cream);
+  --color-linen: var(--linen);
+  --color-beige: var(--beige);
+  --color-coffee: var(--coffee);
+  --color-espresso: var(--espresso);
+  --color-charcoal: var(--charcoal);
+  --color-gold: var(--gold);
+  --color-sage: var(--sage);
+  --color-rose: var(--rose);
+  --font-sans: "Inter", Arial, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --shadow-soft: 0 24px 80px rgba(45, 32, 24, 0.14);
+  --shadow-glow: 0 0 80px rgba(200, 163, 95, 0.28);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: "Inter", Arial, sans-serif;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(200, 163, 95, 0.18), transparent 34rem),
+    linear-gradient(180deg, #fbf4e8 0%, #f3e6d2 42%, #fbf4e8 100%);
+  color: var(--charcoal);
+}
+
+img {
+  max-width: 100%;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
